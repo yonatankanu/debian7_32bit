@@ -292,8 +292,7 @@ echo "menu (Menampilkan daftar perintah yang tersedia)"  | tee -a log-install.tx
 echo "usernew (Membuat Akun SSH)"  | tee -a log-install.txt
 echo "trial (Membuat Akun Trial)"  | tee -a log-install.txt
 echo "hapus (Menghapus Akun SSH)"  | tee -a log-install.txt
-echo "login (Cek User Login)"  | tee -a log-install.txt
-echo "dropmon (Cek Dropbear Login)"  | tee -a log-install.txt
+echo "login (Cek User Login)"  | tee -a log-install.tx
 echo "user-expired (Auto Lock User Expire tiap jam 00:00)"  | tee -a log-install.txt
 echo "member (Cek Member SSH)"  | tee -a log-install.txt
 echo "restart (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
@@ -302,11 +301,6 @@ echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
 echo "bench-network (Cek Kualitas VPS)"  | tee -a log-install.txt
 echo "ps-mem (Cek RAM)"  | tee -a log-install.txt
 echo "about (Informasi tentang script auto install)"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Account Default (utk SSH dan VPN)"  | tee -a log-install.txt
-echo "---------------"  | tee -a log-install.txt
-echo "User     : thornssh"  | tee -a log-install.txt
-echo "Password : yonatankanu"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Fitur lain"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
