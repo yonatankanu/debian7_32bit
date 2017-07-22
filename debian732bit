@@ -219,6 +219,7 @@ wget -O cek "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/
 wget -O limit "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/getout"
 wget -O user-expired "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/freak/user-expired.sh"
 wget -O list "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/user-list.sh"
+wget -O user-del-exp "https://raw.githubusercontent.com/yonatankanu/kanu/master/user-del-exp.sh"
 wget -O restart "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
 wget -O bench-network "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/bench-network.sh"
@@ -234,6 +235,7 @@ chmod +x cek
 chmod +x limit
 chmod +x user-expired
 chmod +x list
+chmod +x user-del-exp
 chmod +x restart
 chmod +x speedtest
 chmod +x bench-network
@@ -296,7 +298,8 @@ echo "cek (Cek User Login)"  | tee -a log-install.tx
 echo "limit ( DisConnect Multi Login )"  | tee -a log-install.tx
 echo "Setelah Limit harap service dropbear restart"  | tee -a log-install.tx
 echo "user-expired ( Lock User Expire tiap jam 00:00)"  | tee -a log-install.txt
-echo "list ( Dafta Akun SSH)"  | tee -a log-install.txt
+echo "list ( Daftar Akun SSH)"  | tee -a log-install.txt
+echo "user-del-exp ( Delete Akun SSH Dibaca baik-baik)"  | tee -a log-install.txt
 echo "restart (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
 echo "reboot (Reboot VPS)"  | tee -a log-install.txt
 echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
