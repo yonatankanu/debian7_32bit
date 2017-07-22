@@ -7,6 +7,9 @@ echo -e "           https://www.facebook.com/groups/1515866931798557/?ref=bookma
 echo -e "  DEVELOPED BY Yonatan Kanu (https://www.facebook.com/kanu.nugraha , 085707136028)"
 
 echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
 
 read -p "Username : " Login
 read -p "Password : " Pass
