@@ -211,7 +211,7 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/yonatankanu/kanu/master/menu.sh"
 wget -O add "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/trial.sh"
 wget -O del "https://raw.githubusercontent.com/yonatankanu/debian7_32bit/master/hapus.sh"
