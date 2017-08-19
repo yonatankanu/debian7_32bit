@@ -87,6 +87,28 @@ echo "<pre>Setup by Yonatan Kanu | WA : 085707136028</pre>" > /home/vps/public_h
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/yonatankanu/kanu/master/vps.conf"
 service nginx restart
 
+# Konfigurasi Banner SSH
+cd /etc/thornssh
+<font color="blue"><b>==================================================<br></b></font>
+<font color="red"><b>SELAMAT DATANG<br>
+TERIMA KASIH TELAH MEMBELI SSH DARI KAMI</b></font>
+<font color="blue"><b>==================================================<br>
+BACA BAIK BAIK PERATURAN DI BAWAH INI:<br>
+- NO MULTY LOGIN<br>
+- DILARANG DDOS<br>
+- DILARANG BERMAIN GAME PLAYSTATION<br>
+- DILARANG CARDING/HACKING<br>
+- DILARANG DOWNLOAD TORRENT FILE<br>
+- DILARANG SPAM<br>
+==================================================<br>
+PELANGGARAN TERSEBUT AKAN MEMBUAT AKUN ANDA DIHAPUS PERMANEN<br>
+==================================================<br>
+TERIMA KASIH............!!!!!<br>
+==================================================</b></font>
+<font color="red"><b>SUPPORTED BY THORN SSH</font>
+<font color="blue"><b>==================================================<br>
+
+cd
 # install openvpn
 wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/arieonline/autoscript/master/conf/openvpn-debian.tar"
 cd /etc/openvpn/
@@ -146,6 +168,7 @@ apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 80 -p 109 -p 110"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_BANNER="etc/thornssh"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart
